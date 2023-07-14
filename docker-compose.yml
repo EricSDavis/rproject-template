@@ -1,0 +1,14 @@
+name: ${PROJECT_NAME}
+services:
+  project:
+    container_name: ${PROJECT_NAME}
+    build:
+      context: .
+      args:
+        - PROJECT_NAME=${PROJECT_NAME}
+    ports:
+      - "8787:8787"
+    volumes:
+      - $PWD:/home/rstudio/${PROJECT_NAME}
+    env_file:
+      - .env
