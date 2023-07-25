@@ -1,6 +1,6 @@
 # rproject-template
 
-This is a template for creating repoducible R projects using `docker` and `GNU Make`. The folder structure is opinionated and is designed to keep your project organized and reproducible.
+This is a template for creating repoducible R projects using `apptainer` (formerly `singularity`) or `docker` and `GNU Make`. The folder structure is opinionated and is designed to keep your project organized and reproducible.
 
 ## Pre-requisites
 
@@ -8,7 +8,8 @@ Install `docker` on your machine: <https://docs.docker.com/get-docker/>
 
 ## How to use this template
 
-1.  Create a repository from this template according to these instructions: <https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>
+1.  Create a repository from this template according to these instructions: <https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>.  
+    Make sure to select the option to include all branches. This will allow you to use either the `apptainer` branch for working on projects on HPC systems or the `docker` branch for working locally.
 
 2.  Then clone your new repository locally:
 
