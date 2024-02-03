@@ -6,5 +6,3 @@ ARG PROJECT_NAME
 # RUN R -e "install.packages('rmarkdown')"
 
 WORKDIR /home/rstudio/${PROJECT_NAME}
-
-COPY . /home/rstudio/${PROJECT_NAME}

@@ -28,11 +28,11 @@ up:
 	@echo "PROJECT_NAME=$(value PROJECT_NAME)" > .env
 	@echo "PASSWORD=$(value PASSWORD)" >> .env
 	@echo Your password is $(value PASSWORD)
-	docker-compose up -d --build
+	docker compose up -d --build
 
 ## Stop and remove docker container
 down:
-	docker-compose down
+	docker compose down
 
 ## Define rules for building objects ###############################
 data/greeting.rds:\
